@@ -1,12 +1,11 @@
-let hello = "hello world";
+let data: unknown;
 
-if (typeof hello === "string") {
-  console.log(hello.toUpperCase());
-} else if (typeof hello === "number") {
-  let result = hello * 2;
-  console.log(result);
-} else if (typeof hello === "boolean") {
-  console.log(hello ? "si" : "no");
+if (typeof data === "string") {
+  console.log(data.toUpperCase());
+} else if (typeof data === "number") {
+  console.log(data * 2);
+} else if (typeof data === "boolean") {
+  console.log(data ? "si" : "no");
 } else {
   console.log("tipo non supportato");
 }
