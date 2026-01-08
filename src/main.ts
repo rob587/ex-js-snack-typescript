@@ -18,3 +18,15 @@ type dipendente = {
   sex: "m" | "f";
   servizio: number[];
 };
+
+type developer = dipendente & {
+  esperienze: "junior" | "mid" | "senior";
+  linguaggi?: string[];
+  certificazioni: string[];
+};
+
+type projectmanager = dipendente & {
+  teamSize: number | null;
+  budget?: number;
+  stakeHolder: string[];
+};
