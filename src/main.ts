@@ -10,3 +10,11 @@ if (typeof hello === "string") {
 } else {
   console.log("tipo non supportato");
 }
+
+type dipendente = {
+  nome: string;
+  cognome: string;
+  annoNascita: number;
+  sex: "m" | "f";
+  servizio: number[];
+};
